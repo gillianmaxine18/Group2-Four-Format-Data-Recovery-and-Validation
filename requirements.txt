@@ -1,0 +1,7 @@
+pandas>=2.2
+numpy>=1.26
+openpyxl>=3.1
+pyarrow>=15
+# only needed to build report.html from report.ipynb:
+jupyter
+nbconvert
