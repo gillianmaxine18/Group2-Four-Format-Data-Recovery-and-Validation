@@ -1,0 +1,12 @@
+DSA4153 Week 10 - automated check results
+run at: 2026-11-06T01:09:00
+python 3.15.2, pandas 3.1.1, numpy 2.5.4
+runner: python run_tests.py  (unittest)
+
+ERROR      unittest.loader._FailedTest.test_export
+ERROR      unittest.loader._FailedTest.test_readers
+ERROR      unittest.loader._FailedTest.test_reconcile
+ERROR      unittest.loader._FailedTest.test_validation
+
+ran 4 checks: 0 passed, 0 failed, 4 errors, 0 skipped
+RESULT: FAILED
