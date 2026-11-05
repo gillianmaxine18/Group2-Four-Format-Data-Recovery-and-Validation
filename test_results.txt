@@ -1,12 +1,67 @@
 DSA4153 Week 10 - automated check results
-run at: 2026-11-06T01:09:00
+run at: 2026-11-06T01:18:56
 python 3.15.2, pandas 3.1.1, numpy 2.5.4
 runner: python run_tests.py  (unittest)
 
-ERROR      unittest.loader._FailedTest.test_export
-ERROR      unittest.loader._FailedTest.test_readers
-ERROR      unittest.loader._FailedTest.test_reconcile
-ERROR      unittest.loader._FailedTest.test_validation
+PASS       test_export.AuditAndChecks.test_audit_steps_are_numbered
+PASS       test_export.AuditAndChecks.test_make_check_tolerance
+PASS       test_export.PipelineAndCli.test_15_conflicting_key_fails_nonzero_and_publishes_nothing
+PASS       test_export.PipelineAndCli.test_16_failed_run_does_not_overwrite_earlier_successful_outputs
+PASS       test_export.PipelineAndCli.test_cli_exit_status
+PASS       test_export.PipelineAndCli.test_disagreeing_formats_fail_and_publish_nothing
+PASS       test_export.PipelineAndCli.test_full_run_publishes_all_outputs_and_reconciles
+PASS       test_export.PipelineAndCli.test_missing_file_and_unsupported_input_fail
+PASS       test_export.PipelineAndCli.test_reporting_year_1997_regenerates_analysis
+PASS       test_export.RoundTrips.test_13_round_trip_all_formats
+PASS       test_export.RoundTrips.test_14_corrupted_export_values_fail_comparison
+PASS       test_export.RoundTrips.test_14_deleted_rows_and_bad_types_fail
+PASS       test_export.RoundTrips.test_excel_sheet_and_json_records
+PASS       test_export.RoundTrips.test_exports_have_no_index_and_six_fields
+PASS       test_export.RoundTrips.test_types_after_reload_are_normalized
+PASS       test_readers.Analysis.test_asia_2007_rows_population_and_rank
+PASS       test_readers.Analysis.test_philippines_history
+PASS       test_readers.Analysis.test_rank_uses_min_method_for_ties
+PASS       test_readers.Analysis.test_reporting_year_1997_changes_selection
+PASS       test_readers.FileLevelErrors.test_02_missing_file
+PASS       test_readers.FileLevelErrors.test_03_existing_unsupported_format
+PASS       test_readers.NormalRecovery.test_01_csv_positions_start_at_one_and_skip_comments
+PASS       test_readers.NormalRecovery.test_01_csv_reads_cp1252_text
+PASS       test_readers.NormalRecovery.test_01_formats_agree
+PASS       test_readers.NormalRecovery.test_01_normal_recovery_csv
+PASS       test_readers.NormalRecovery.test_01_normal_recovery_json
+PASS       test_readers.NormalRecovery.test_01_normal_recovery_parquet
+PASS       test_readers.NormalRecovery.test_01_normal_recovery_xlsx
+PASS       test_readers.NormalRecovery.test_json_flatten
+PASS       test_reconcile.Conflicts.test_09_conflicting_key_csv_fixture_stops
+PASS       test_reconcile.Conflicts.test_09_conflicting_key_stops
+PASS       test_reconcile.Conflicts.test_no_conflict_for_identical_copies
+PASS       test_reconcile.Duplicates.test_08_exact_duplicates_removed_and_logged
+PASS       test_reconcile.Duplicates.test_08_real_file_has_two_duplicates
+PASS       test_reconcile.MissingKey.test_10_missing_key_column_is_file_error
+PASS       test_reconcile.MissingKey.test_10_missing_key_value_is_quarantined
+PASS       test_reconcile.NumpyMatrix.test_12_matrix_shapes_and_broadcast
+PASS       test_reconcile.NumpyMatrix.test_asia_total_matches_pandas
+PASS       test_reconcile.NumpyMatrix.test_boolean_selection_ignores_other_continents
+PASS       test_reconcile.NumpyMatrix.test_matrix_frame_has_named_year_columns
+PASS       test_reconcile.NumpyMatrix.test_matrix_requires_exactly_one_row_per_cell
+PASS       test_reconcile.NumpyMatrix.test_real_data_asia_2007_total
+PASS       test_reconcile.ReorderedRecords.test_11_reordered_records_still_agree
+PASS       test_reconcile.ReorderedRecords.test_differences_are_detected
+PASS       test_reconcile.ReorderedRecords.test_float_tolerance_is_absolute_1e_8
+PASS       test_reconcile.ReorderedRecords.test_sort_by_country_then_year
+PASS       test_validation.MissingColumn.test_04_missing_column_csv_fixture_stops_run
+PASS       test_validation.MissingColumn.test_04_missing_column_is_file_level_error
+PASS       test_validation.MissingColumn.test_mapping_renames_and_keeps_position
+PASS       test_validation.ParquetReader.test_parquet_reader_logic_with_fake_dataframe
+PASS       test_validation.ParquetReader.test_parquet_real_file
+PASS       test_validation.ParsingAndValidation.test_05_unparseable_number
+PASS       test_validation.ParsingAndValidation.test_06_fractional_year_and_population
+PASS       test_validation.ParsingAndValidation.test_07_non_finite_values
+PASS       test_validation.ParsingAndValidation.test_07_out_of_range_values
+PASS       test_validation.ParsingAndValidation.test_booleans_are_not_numbers
+PASS       test_validation.ParsingAndValidation.test_missing_and_empty_values
+PASS       test_validation.ParsingAndValidation.test_valid_record_is_cleaned_and_trimmed
+PASS       test_validation.ParsingAndValidation.test_validation_result_collects_and_keeps_original_values
 
-ran 4 checks: 0 passed, 0 failed, 4 errors, 0 skipped
-RESULT: FAILED
+ran 59 checks: 59 passed, 0 failed, 0 errors, 0 skipped
+RESULT: OK
