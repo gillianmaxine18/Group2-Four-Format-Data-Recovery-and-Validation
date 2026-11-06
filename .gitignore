@@ -223,3 +223,8 @@ __marimo__/
    output/
    staging/
    tests/fixtures/
+
+outputs/
+staging/
+.staging_*
+tests/fixtures/
