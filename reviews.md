@@ -89,8 +89,9 @@ DSA4153 Week 10 Group Programming Challenge, Group 2 Repository: https\://github
 
 **Author's response (Hans writes)**
 
-1. Kept as is in \`26489c1\`: \`make\_staging\` and \`publish\_staging\` in \`src/export.py\` already create the parent and output directories with \`mkdir(parents=True, exist\_ok=True)\` before \`write\_export\` is called on staged files.  
-2.  Kept as is in \`26489c1\`: \`run\_pipeline\` intentionally discards the temporary staging directory on failure and records the stopping exception in \`failed\_validation\_report.csv\` via \`write\_failed\_report\` so no partial outputs are published. 
+1. Thank you for pointing this out. I tested write_export() by attempting to export a CSV file into a nested directory that did not exist. The test produced an OSError because the parent directory was missing. After inspecting the implementation, I confirmed that write_export() does not independently create its parent directory. Although make_staging() creates the staging directory for normal pipeline execution, direct calls to write_export() with a nonexistent parent directory can still fail. I agree that the function should create its parent directory before writing. Confirmed issue; fix required. (Relevant commit: 704d243 — src/export.)
+2. Thank you for identifying the missing audit information. I inspected run_pipeline() and confirmed that both exception handlers discard the staging directory and call write_failed_report() using only checks and the exception message. The accumulated audit entries from run_stages() are not saved when processing fails. I verified that the failure report contains the checks and stopping error but does not contain the stage-level audit information. I agree that preserving the audit log separately would improve debugging while still preventing partial outputs from being published. Confirmed issue; fix required. (Relevant commit: 26489c1 — src/pipeline.py.)
+
 
 ---
 
@@ -101,5 +102,5 @@ DSA4153 Week 10 Group Programming Challenge, Group 2 Repository: https\://github
 | 1 | Kaycelyn | Gillian | `e8499d1` | readers.py, analysis.py | `b44ae1c`   |
 | 2 | Giana | Kaycelyn | `a7eef66` | validation.py, parquet\_reader.py | `1401cb0`  |
 | 3 | Hans | Giana | `aaddfe5` | reconcile.py, matrix.py | `a51accd`  |
-| 4 | Gillian | Hans | `26489c1`  | export.py, pipeline.py | `26489c1`  |
+| 4 | Gillian | Hans | `704d243, 26489c1`  | export.py, pipeline.py | ``  |
 
