@@ -4,7 +4,7 @@ Group 2: Gillian Maxine Estilloso, Kaycelyn Tigas, Giana Elisha Tuplano, Hans Ad
 
 Repository URL: https://github.com/gillianmaxine18/Group2-Four-Format-Data-Recovery-and-Validation
 Release tag: week10-v1.0
-Full commit hash (tag week10-v1.0): e2d4e0776b2811fe32b5a88860d78747633bf766
+Full commit hash (tag week10-v1.0): 4f6dce765357274dd24c6f6733331ed38a8ebdc8
 
 Input SHA-256 hashes (data/ folder, as given in manifest.json)
 country_records.csv      11567e9c8c3fbeda6115cdf0797b6d234a246e60b0d2156548088ecd30542ca8
