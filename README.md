@@ -70,4 +70,9 @@ values) before comparing with the pre-export table. Each conversion is written i
 
 ## Fresh-clone verification, AI disclosure
 
-Record the verifying member and date in `submission_manifest.txt`. AI assistance used: TODO (state exactly what, per the course AI policy).
+Fresh-clone verification:
+Verifying member: Giana Elisha Tuplano
+Date: November 6, 2026
+Result: Successfully cloned the repository to a clean directory and executed python run_tests.py. All tests passed (OK).
+
+AI assistance used: AI was used strictly as an assistant to help formulate equal distribution of tasks, structure peer review feedback for reviews.md, and clarify Git workflow commands.
