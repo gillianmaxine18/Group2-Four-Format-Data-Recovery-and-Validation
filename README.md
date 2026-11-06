@@ -1,4 +1,4 @@
-# Group 2: DSA4153 Week 10 - Four-Format Data Recovery and Validation
+﻿# Group 2: DSA4153 Week 10 - Four-Format Data Recovery and Validation
 
 Recovers the same clean Gapminder table (1,704 rows) from CSV, Excel, JSON and Parquet, proves the four agree,
 runs pandas/NumPy analysis, exports four formats, and verifies every export by reloading it.
@@ -38,7 +38,7 @@ and never overwrites earlier successful outputs (all files are built in a hidden
 
 | Member | Git identity | Branch | Files |
 |---|---|---|---|
-| 1 Gillian Maxine Estilloso | `@gillianmaxine18` | `maxine(task1)-readers-analysis` | `src/readers.py`, `src/analysis.py`, `config.json` |
+| 1 Gillian Maxine Estilloso | `@gillianmaxine18` | `member1-readers-analysis` | `src/readers.py`, `src/analysis.py`, `config.json` |
 | 2 Kaycelyn Tigas | `@kaycelyntigas` | `kaycelyn-validation` | `src/validation.py`, `src/parquet_reader.py` |
 | 3 Giana Elisha Tuplano | `@gianaelishatuplano-jpg` | `elisha-reconcile-numpy` | `src/reconcile.py`, `src/matrix.py` |
 | 4 Hans Adrian Laudato | `hansadrianlaudato-oss` | `Hans-export-cli` | `main.py`, `src/common.py`, `src/export.py`, `src/audit.py`, `src/pipeline.py`, `run_tests.py` |
