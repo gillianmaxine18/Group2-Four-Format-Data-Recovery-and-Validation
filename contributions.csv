@@ -1,0 +1,5 @@
+member,git_identity,branch,code_symbol,code_path,code_commit,test_path,test_commit,review_reference
+Gillian Maxine Estilloso,"Gillian Maxine <gillianmaxine.estilloso@ust.edu.ph>",member1-readers-analysis,read_source,src/readers.py,67ab5e3fcec736ea6981c0789140ee586344a39e,tests/test_readers.py,7194ed2cb80bd0829a6e8cc4403d5e1ea93f21a3,reviews.md#review-4
+Kaycelyn Tigas,"<name> <email>",<branch>,validate_record,src/validation.py,<40-char hash>,tests/test_validation.py,<40-char hash>,reviews.md#review-1
+Giana Elisha Tuplano,"<name> <email>",<branch>,check_conflicts,src/reconcile.py,<40-char hash>,tests/test_reconcile.py,<40-char hash>,reviews.md#review-2
+Hans Adrian Laudato,"<name> <email>",<branch>,roundtrip_check,src/export.py,<40-char hash>,tests/test_export.py,<40-char hash>,reviews.md#review-3
