@@ -1,0 +1,13 @@
+DSA4153 Week 10 Group Programming Challenge
+Four-Format Data Recovery and Validation
+Group 2: Gillian Maxine Estilloso, Kaycelyn Tigas, Giana Elisha Tuplano, Hans Adrian Laudato
+
+Repository URL: https://github.com/gillianmaxine18/Group2-Four-Format-Data-Recovery-and-Validation
+Release tag: week10-v1.0
+Full commit hash (tag week10-v1.0): e2d4e0776b2811fe32b5a88860d78747633bf766
+
+Input SHA-256 hashes (data/ folder, as given in manifest.json)
+country_records.csv      11567e9c8c3fbeda6115cdf0797b6d234a246e60b0d2156548088ecd30542ca8
+country_records.xlsx     0756178ebfb07ae7adcedd07f1237bee7ef3bb95714102ca39657cde6784065e
+country_records.json     400966a74d2d19235e7d7f3091da71040d272e0d8ad0ca1213e45d0aa06306c3
+country_records.parquet  7f72d4ddb71d7cc34c50782220aca4b3bd68d9f0fe87fb0022b677a30b3c449a
