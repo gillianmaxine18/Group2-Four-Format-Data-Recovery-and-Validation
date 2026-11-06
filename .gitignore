@@ -228,3 +228,4 @@ outputs/
 staging/
 .staging_*
 tests/fixtures/
+*.bundle
