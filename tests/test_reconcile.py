@@ -116,6 +116,11 @@ class NumpyMatrix(unittest.TestCase):
         self.assertTrue(np.allclose(info["index"], index_by_loop(m, 0), rtol=0, atol=1e-8))
         self.assertAlmostEqual(info["index"][0, 1], 110.0)  # 110 / 100 * 100
 
+    def test_zero_baseline_is_rejected(self):
+        from src.common import ProcessingError
+        with self.assertRaises(ProcessingError):
+            index_to_baseline(np.array([[0, 5]]), 0)
+            
     def test_asia_total_matches_pandas(self):
         rows, total = asia_total(self.df, 2007)
         self.assertEqual(rows, 3)

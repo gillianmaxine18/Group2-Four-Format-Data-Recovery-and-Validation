@@ -27,6 +27,8 @@ def build_population_matrix(df: pd.DataFrame, countries: list[str], years: list[
 def index_to_baseline(matrix: np.ndarray, baseline_col: int) -> dict[str, Any]:
     """Broadcast each row's baseline column to give an index (baseline = 100)."""
     baseline = matrix[:, [baseline_col]]  # shape (rows, 1)
+    if (baseline <= 0).any():
+        raise ProcessingError("baseline population must be greater than zero")
     index = matrix / baseline * 100.0  # (rows, cols) / (rows, 1) broadcasts
     return {
         "baseline": baseline,
