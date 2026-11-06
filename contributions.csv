@@ -1,5 +1,5 @@
 member,git_identity,branch,code_symbol,code_path,code_commit,test_path,test_commit,review_reference
-Gillian Maxine Estilloso,gillianmaxine18 / Gillian Maxine,member1-readers-analysis,read_source,src/readers.py,e8499d1dc0350e45603c975203d85bdcae1b869f,tests/test_readers.py,7194ed2cb80bd0829a6e8cc4403d5e1ea93f21a3,reviews.md#review-4
-Kaycelyn Tigas,kaycelyntigas,kaycelyn-validation,validate_record,src/validation.py,a7eef6664d87772cd49c9456190dd122188ad86f,tests/test_validation.py,960831b051170877f57303f81f2fc80e3c496336,reviews.md#review-1
-Giana Elisha Tuplano,gianaelishatuplano-jpg,elisha-reconcile-numpy,check_conflicts,src/reconcile.py,aaddfe5f95e21a71380be893e6ccc355f4156cb9,tests/test_reconcile.py,9cf5f7a2b37856bbf93d053f55f7ee1304dca9ce,reviews.md#review-2
-Hans Adrian Laudato,hansadrianlaudato-oss,Hans-export-cli,write_export,src/export.py,704d24383a5b4223ac495de4c49a14189fcf945e,tests/test_export.py,c3235ede1b947acc28404946b7392ec4101bc791,reviews.md#review-3
+Gillian Maxine Estilloso,gillianmaxine18 / Gillian Maxine,member1-readers-analysis,read_source,src/readers.py,e8499d1dc0350e45603c975203d85bdcae1b869f,tests/test_readers.py,7194ed2cb80bd0829a6e8cc4403d5e1ea93f21a3,reviews.md#review-1
+Kaycelyn Tigas,kaycelyntigas,kaycelyn-validation,validate_record,src/validation.py,a7eef6664d87772cd49c9456190dd122188ad86f,tests/test_validation.py,960831b051170877f57303f81f2fc80e3c496336,reviews.md#review-2
+Giana Elisha Tuplano,gianaelishatuplano-jpg,elisha-reconcile-numpy,check_conflicts,src/reconcile.py,aaddfe5f95e21a71380be893e6ccc355f4156cb9,tests/test_reconcile.py,9cf5f7a2b37856bbf93d053f55f7ee1304dca9ce,reviews.md#review-3
+Hans Adrian Laudato,hansadrianlaudato-oss,Hans-export-cli,write_export,src/export.py,704d24383a5b4223ac495de4c49a14189fcf945e,tests/test_export.py,c3235ede1b947acc28404946b7392ec4101bc791,reviews.md#review-4
